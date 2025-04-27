@@ -29,13 +29,14 @@ header {
 #Logo {
   width: 64px;
   height: auto;
+  filter: opacity(75%);
 }
 
 #CompanyName {
   font-size: 24px;
   letter-spacing: 6px;
   font-weight: 700;
-  color: #000000;
+  color: #3E3F43;
 }
 
 nav ul {
@@ -60,5 +61,5 @@ nav a:hover {
 }
 
 nav a.active {
-  font-weight: bold;
+  font-weight: 700;
 }

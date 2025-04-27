@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 128px;
+
+}
+
+header {
+  display: flex;
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  background-color: #eeeeee;
+  
+}
+
+#LogoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+  gap: 6px;
+}
+
+#Logo {
+  width: 64px;
+  height: auto;
+}
+
+#CompanyName {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #612999;
+  font-size: 30px;
+  transition: color 0.3s;
+  margin-left: 64px;
+}
+
+nav a:hover {
+  color: #8c60b0;
+}
+
+nav a.active {
+  font-weight: bold;
+}

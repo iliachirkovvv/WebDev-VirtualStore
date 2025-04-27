@@ -60,6 +60,10 @@ nav a:hover {
   color: #8c60b0;
 }
 
+nav li:hover {
+  cursor: pointer;
+}
+
 nav a.active {
   font-weight: 700;
 }

@@ -71,7 +71,8 @@ nav a.active {
 footer {
   margin: 0px;
   padding: 32px;
-  height: 287px;
+  height: 223px;
+  align-items: flex-start;
   background-color: #EFECFF;
 }
 
@@ -81,7 +82,8 @@ footer {
 }
 
 .FooterHeader {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 700;
@@ -91,14 +93,17 @@ footer {
 .FooterLinks {
   cursor: pointer;
   color: #333333;
-
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 8px;
+  margin: 0;
 }
 
 .FooterLinks:hover {
   color:#666666;
 }
 
-footer a {
+#FooterLinksContainer a {
   color: inherit;
   text-decoration: inherit;
   margin: inherit;
@@ -107,3 +112,24 @@ footer a {
   font-weight: inherit;
 }
 
+#FooterIcons {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.SocialIcon {
+  width: 20px;
+  height: auto;
+  filter: opacity(75%);
+}
+
+.Copyright {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+}

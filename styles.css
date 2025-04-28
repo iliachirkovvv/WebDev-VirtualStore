@@ -15,7 +15,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 32px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   
 }
 
@@ -67,3 +67,43 @@ nav li:hover {
 nav a.active {
   font-weight: 700;
 }
+
+footer {
+  margin: 0px;
+  padding: 32px;
+  height: 287px;
+  background-color: #EFECFF;
+}
+
+#FooterLinksContainer {
+  display: flex;
+  gap: 150px;
+}
+
+.FooterHeader {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.FooterLinks {
+  cursor: pointer;
+  color: #333333;
+
+}
+
+.FooterLinks:hover {
+  color:#666666;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: inherit;
+  margin: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+

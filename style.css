@@ -42,12 +42,22 @@ section {
   color: #3E3F43;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 64px;
 }
 
 nav a {
@@ -57,19 +67,16 @@ nav a {
   font-weight: 400;
   transition: color 0.3s;
   margin-left: 64px;
+  cursor: pointer;
 }
 
 nav a:hover {
   color: #8c60b0;
 }
 
-nav li:hover {
-  cursor: pointer;
-}
-
 nav a.active {
   font-weight: 700;
-}
+}x
 
 .BannerBG {
   width: 100%;
@@ -280,8 +287,6 @@ footer {
   margin: 0;
 }
 
-
-
 .Pictures {
   margin-top: 0;
   display: flex;
@@ -311,6 +316,11 @@ footer {
   margin-bottom: 16px;
 }
 
+.ProductList li:hover {
+  filter: opacity(75%);
+  cursor: pointer;
+}
+
 .ProductRocket {
   height: 82px;
   width: 82px;
@@ -331,7 +341,16 @@ footer {
   font-weight: 400;
 }
 
-.ProductList li p:hover {
-  color: #666666;
-  cursor: pointer;
+.VideosContainer {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.HowToVideos iframe {
+  width: 520px;
+  height: 300px;
+  flex-shrink: 0;
 }

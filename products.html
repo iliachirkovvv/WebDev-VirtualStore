@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewlab Store</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewlab Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
 </head>
 <body>
-    <header>
-        <div id="LogoContainer">
-            <img id="Logo" src="source/coffee-machine.png" alt="Brewlab Logo">
-            <p id="CompanyName">BREWLAB</p>
-            </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Our Products</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="Pictures">
-        <img class="Picture" src="source/coffee_brewing1.jpg" alt="Brewing Picture">
-        <img class="Picture" src="source/coffee_brewing2.jpg" alt="Brewing Picture">
-        <img class="Picture" src="source/coffee_brewing3.png" alt="Brewing Picture">
-    </section>
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo" src="source/coffee-machine.png" alt="Brewlab Logo">
+      <p class="company-name">BREWLAB</p>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link active">Our Products</a></li>
+        <li><a class="nav-link">About</a></li>
+        <li><a class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="ChoiceList">
-        <h1>Our Coffee Brewers</h1>
-        <ul class="ProductList">
-            <li>
-                <div class="ProductRocket">
-                    <img class="Rocket" src="source/rocket.png" alt="Rocket">
-                </div>
-                <p>Hario V60</p>
-            </li>
-            <li>
-                <div class="ProductRocket">
-                    <img class="Rocket" src="source/rocket.png" alt="Rocket">
-                </div>
-                <p>Aeropress Go</p>
-            </li>
-            <li>
-                <div class="ProductRocket">
-                    <img class="Rocket" src="source/rocket.png" alt="Rocket">
-                </div>
-                <p>Chemex Classic 8-Cup</p>
-            </li>
-            <li>
-                <div class="ProductRocket">
-                    <img class="Rocket" src="source/rocket.png" alt="Rocket">
-                </div>
-                <p>Keurig K-Supreme</p>
-            </li>
-        </ul>
-    </section>
+  <div class="product-gallery">
+    <img class="gallery-image" src="source/coffee_brewing1.jpg" alt="Brewing Picture">
+    <img class="gallery-image" src="source/coffee_brewing2.jpg" alt="Brewing Picture">
+    <img class="gallery-image" src="source/coffee_brewing3.png" alt="Brewing Picture">
+  </div>
 
-    <section class="HowToVideos">
-        <h1>How To Brew Coffee Using These Products</h1>
-        <div class="VideosContainer">
-            <iframe src="https://www.youtube.com/embed/1oB1oDrDkHM" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/7h9mJjfoCk8" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/A2oipi1dEIw" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/m-UXLvftnMc" frameborder="0" allowfullscreen></iframe>
+  <section class="product-listing">
+    <h1>Our Coffee Brewers</h1>
+    <ul class="product-list">
+      <li class="product-list-item">
+        <div class="product-icon">
+          <img class="rocket-icon" src="source/rocket.png" alt="Rocket">
         </div>
-    </section>
+        <p class="product-name-inline">Hario V60</p>
+      </li>
+      <li class="product-list-item">
+        <div class="product-icon">
+          <img class="rocket-icon" src="source/rocket.png" alt="Rocket">
+        </div>
+        <p class="product-name-inline">Aeropress Go</p>
+      </li>
+      <li class="product-list-item">
+        <div class="product-icon">
+          <img class="rocket-icon" src="source/rocket.png" alt="Rocket">
+        </div>
+        <p class="product-name-inline">Chemex Classic 8-Cup</p>
+      </li>
+      <li class="product-list-item">
+        <div class="product-icon">
+          <img class="rocket-icon" src="source/rocket.png" alt="Rocket">
+        </div>
+        <p class="product-name-inline">Keurig K-Supreme</p>
+      </li>
+    </ul>
+  </section>
 
-    <footer>
-        <div id="FooterLinksContainer">
-            <div id="FooterWhoWeAre">
-                <p class="FooterHeader">WHO WE ARE</p>
-                <p class="FooterLinks">About</p>
-                <p class="FooterLinks">Team</p>
-                <p class="FooterLinks">Work With Us</p>
-            </div>
-            <div id="FooterFollowUs">
-                <p class="FooterHeader">FOLLOW US</p>
-                <p class="FooterLinks"><a href="https://x.com/" target="_blank">Twitter</a></p>
-                <p class="FooterLinks"><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
-                <p class="FooterLinks"><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-            </div>
-        </div>
-        <div id="FooterIcons">
-            <a href="https://x.com/" target="_blank"><img class="SocialIcon" src="source/twitter.png" alt="Twitter Logo"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img class="SocialIcon" src="source/facebook.png" alt="Facebook Logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="SocialIcon" src="source/instagram.png" alt="Instagram Logo"></a>
-        </div>
-        <p class="Copyright">© 2025 BREWLAB</p>
-    </footer>
+  <section class="video-section">
+    <h1>How To Brew Coffee Using These Products</h1>
+    <div class="video-carousel">
+      <iframe src="https://www.youtube.com/embed/1oB1oDrDkHM" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/7h9mJjfoCk8" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/A2oipi1dEIw" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/m-UXLvftnMc" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <div class="footer-section">
+        <p class="footer-title">WHO WE ARE</p>
+        <p class="footer-link">About</p>
+        <p class="footer-link">Team</p>
+        <p class="footer-link">Work With Us</p>
+      </div>
+      <div class="footer-section">
+        <p class="footer-title">FOLLOW US</p>
+        <p class="footer-link"><a href="https://x.com/" target="_blank">Twitter</a></p>
+        <p class="footer-link"><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+        <p class="footer-link"><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://x.com/" target="_blank"><img class="social-icon" src="source/twitter.png" alt="Twitter Logo"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img class="social-icon" src="source/facebook.png" alt="Facebook Logo"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img class="social-icon" src="source/instagram.png" alt="Instagram Logo"></a>
+    </div>
+    <p class="copyright">© 2025 BREWLAB</p>
+  </footer>
+
 </body>
 </html>

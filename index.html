@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewlab Store</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewlab Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
 </head>
 <body>
-    <header>
-        <div id="LogoContainer">
-            <img id="Logo" src="source/coffee-machine.png" alt="Brewlab Logo">
-            <p id="CompanyName">BREWLAB</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Our Products</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="BannerText">Enjoy!
-        <div Class="BannerSmallText">We provide best quality coffee brewers, machines, filters and much more with reasonable prices and fast delivery.</div>
-    </section>
-    <div class="BannerBG"></div>
-    <section class="AboutSection">
-        <h1>About</h1>
-        <p class="AboutText">We’ve talked to hundreds of coffee lovers — from casual sippers to hardcore caffeine fanatics — and compiled their top preferences into a detailed database. From taste profiles to brewing habits, we know what makes a coffee experience truly satisfying.</p>
-        <p class="AboutText">All you have to do is take our quick quiz — it only takes a few seconds — and our smart matching system will connect you with a few perfect brewers that suit your style, budget, and daily ritual.</p>
-        <p class="AboutText">Whether you’re into bold pour-overs, rich espresso shots, or convenient single-cup machines, our algorithm takes the guesswork out of choosing the right setup. The perfect brew starts with the perfect brewer — and we’ll help you find it.</p>
-    </section>
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo" src="source/coffee-machine.png" alt="Brewlab Logo">
+      <p class="company-name">BREWLAB</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="products.html" class="nav-link">Our Products</a></li>
+        <li><a class="nav-link">About</a></li>
+        <li><a class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="PopularProductsSection">
-        <h1>Popular Products</h1>
-        <div class="ProductsWrapper">
-            <div class="Product">
-                <div class="ProductLike"><img class="Heart" src="source/heart.png" alt="Like"></div>
-                <img class="ProductImg" src="source/hariov60.jpg" alt="Hario V60">
-                <p class="ProductName">Hario V60</p>
-                <p class="ProductDescription">A minimalist, Japanese-designed pour-over cone known for its control and clarity.</p>
-                <div class="PriceBuyWrapper">
-                    <p class="ProductPrice">$24.50 US</p>
-                    <div class="ProductBuy"><img class="Basket" src="source/basket.png" alt="Buy"></div>
-                </div>
-            </div>
-            <div class="Product">
-                <div class="ProductLike"><img class="Heart" src="source/heart.png" alt="Like"></div>
-                <img class="ProductImg" src="source/aeropressgo.jpg" alt="Aeropress Go">
-                <p class="ProductName">AeroPress Go</p>
-                <p class="ProductDescription">A compact, travel-friendly brewer that makes smooth, rich coffee using gentle air pressure.</p>
-                <div class="PriceBuyWrapper">
-                    <p class="ProductPrice">$39.95 US</p>
-                    <div class="ProductBuy"><img class="Basket" src="source/basket.png" alt="Buy"></div>
-                </div>
-            </div>
-            <div class="Product">
-                <div class="ProductLike"><img class="Heart" src="source/heart.png" alt="Like"></div>
-                <img class="ProductImg" src="source/chemex8cup.jpg" alt="Chemex Classic 8-Cup">
-                <p class="ProductName">Chemex Classic 8-Cup</p>
-                <p class="ProductDescription">A beautifully designed pour-over brewer that delivers clean, bright coffee.</p>
-                <div class="PriceBuyWrapper">
-                    <p class="ProductPrice">$49.50 US</p>
-                    <div class="ProductBuy"><img class="Basket" src="source/basket.png" alt="Buy"></div>
-                </div>
-            </div>
-            <div class="Product">
-                <div class="ProductLike"><img class="Heart" src="source/heart.png" alt="Like"></div>
-                <img class="ProductImg" src="source/keurig.jpg" alt="Keurig K-Supreme">
-                <p class="ProductName">Keurig K-Supreme</p>
-                <p class="ProductDescription">A high-tech single-serve brewer with app-based control in one touch.</p>
-                <div class="PriceBuyWrapper">
-                    <p class="ProductPrice">$199.99 US</p>
-                    <div class="ProductBuy"><img class="Basket" src="source/basket.png" alt="Buy"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="banner-text">
+    Enjoy!
+    <div class="banner-subtext">
+      We provide best quality coffee brewers, machines, filters and much more with reasonable prices and fast delivery.
+    </div>
+</div>
+  <div class="banner-bg"></div>
 
-    <footer>
-        <div id="FooterLinksContainer">
-            <div id="FooterWhoWeAre">
-                <p class="FooterHeader">WHO WE ARE</p>
-                <p class="FooterLinks">About</p>
-                <p class="FooterLinks">Team</p>
-                <p class="FooterLinks">Work With Us</p>
-            </div>
-            <div id="FooterFollowUs">
-                <p class="FooterHeader">FOLLOW US</p>
-                <p class="FooterLinks"><a href="https://x.com/" target="_blank">Twitter</a></p>
-                <p class="FooterLinks"><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
-                <p class="FooterLinks"><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-            </div>
+  <section class="about-section">
+    <h1>About</h1>
+    <p class="about-text">We’ve talked to hundreds of coffee lovers — from casual sippers to hardcore caffeine fanatics — and compiled their top preferences into a detailed database. From taste profiles to brewing habits, we know what makes a coffee experience truly satisfying.</p>
+    <p class="about-text">All you have to do is take our quick quiz — it only takes a few seconds — and our smart matching system will connect you with a few perfect brewers that suit your style, budget, and daily ritual.</p>
+    <p class="about-text">Whether you’re into bold pour-overs, rich espresso shots, or convenient single-cup machines, our algorithm takes the guesswork out of choosing the right setup. The perfect brew starts with the perfect brewer — and we’ll help you find it.</p>
+  </section>
+
+  <section class="popular-products">
+    <h1>Popular Products</h1>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-like"><img class="icon-heart" src="source/heart.png" alt="Like"></div>
+        <img class="product-image" src="source/hariov60.jpg" alt="Hario V60">
+        <p class="product-name">Hario V60</p>
+        <p class="product-description">A minimalist, Japanese-designed pour-over cone known for its control and clarity.</p>
+        <div class="product-footer">
+          <p class="product-price">$24.50 US</p>
+          <div class="product-buy"><img class="icon-basket" src="source/basket.png" alt="Buy"></div>
         </div>
-        <div id="FooterIcons">
-            <a href="https://x.com/" target="_blank"><img class="SocialIcon" src="source/twitter.png" alt="Twitter Logo"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img class="SocialIcon" src="source/facebook.png" alt="Facebook Logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="SocialIcon" src="source/instagram.png" alt="Instagram Logo"></a>
+      </div>
+
+      <div class="product-card">
+        <div class="product-like"><img class="icon-heart" src="source/heart.png" alt="Like"></div>
+        <img class="product-image" src="source/aeropressgo.jpg" alt="Aeropress Go">
+        <p class="product-name">AeroPress Go</p>
+        <p class="product-description">A compact, travel-friendly brewer that makes smooth, rich coffee using gentle air pressure.</p>
+        <div class="product-footer">
+          <p class="product-price">$39.95 US</p>
+          <div class="product-buy"><img class="icon-basket" src="source/basket.png" alt="Buy"></div>
         </div>
-        <p class="Copyright">© 2025 BREWLAB</p>
-    </footer>
+      </div>
+
+      <div class="product-card">
+        <div class="product-like"><img class="icon-heart" src="source/heart.png" alt="Like"></div>
+        <img class="product-image" src="source/chemex8cup.jpg" alt="Chemex Classic 8-Cup">
+        <p class="product-name">Chemex Classic 8-Cup</p>
+        <p class="product-description">A beautifully designed pour-over brewer that delivers clean, bright coffee.</p>
+        <div class="product-footer">
+          <p class="product-price">$49.50 US</p>
+          <div class="product-buy"><img class="icon-basket" src="source/basket.png" alt="Buy"></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-like"><img class="icon-heart" src="source/heart.png" alt="Like"></div>
+        <img class="product-image" src="source/keurig.jpg" alt="Keurig K-Supreme">
+        <p class="product-name">Keurig K-Supreme</p>
+        <p class="product-description">A high-tech single-serve brewer with app-based control in one touch.</p>
+        <div class="product-footer">
+          <p class="product-price">$199.99 US</p>
+          <div class="product-buy"><img class="icon-basket" src="source/basket.png" alt="Buy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <div class="footer-section">
+        <p class="footer-title">WHO WE ARE</p>
+        <p class="footer-link">About</p>
+        <p class="footer-link">Team</p>
+        <p class="footer-link">Work With Us</p>
+      </div>
+      <div class="footer-section">
+        <p class="footer-title">FOLLOW US</p>
+        <p class="footer-link"><a href="https://x.com/" target="_blank">Twitter</a></p>
+        <p class="footer-link"><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+        <p class="footer-link"><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://x.com/" target="_blank"><img class="social-icon" src="source/twitter.png" alt="Twitter Logo"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img class="social-icon" src="source/facebook.png" alt="Facebook Logo"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img class="social-icon" src="source/instagram.png" alt="Instagram Logo"></a>
+    </div>
+    <p class="copyright">© 2025 BREWLAB</p>
+  </footer>
+
 </body>
 </html>

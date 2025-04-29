@@ -10,6 +10,7 @@ body {
 .header {
   display: flex;
   position: fixed;
+  gap: 75px;
   height: 64px;
   width: 100%;
   top: 0;
@@ -23,7 +24,6 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  margin-right: 64px;
   gap: 6px;
 }
 
@@ -40,18 +40,15 @@ body {
   color: #3e3f43;
 }
 
-.nav {
+nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  margin-right: 64px;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  margin: 64px;
   padding: 0;
   width: 100%;
   flex-wrap: wrap;
@@ -65,6 +62,7 @@ body {
   transition: color 0.3s;
   margin-left: 64px;
   cursor: pointer;
+  text-wrap-mode: nowrap;
 }
 
 .nav-link:hover {
@@ -73,6 +71,17 @@ body {
 
 .nav-link.active {
   font-weight: 700;
+}
+
+@media (max-width: 840px) {
+  .nav-link {
+    font-size: 16px;
+    margin-left: 32px;
+  }
+
+  header {
+    gap: 0;
+  }
 }
 
 /* BANNER */
@@ -85,6 +94,7 @@ body {
 }
 
 .banner-text {
+  margin: 32px;
   width: 448px;
   position: absolute;
   z-index: 2;
@@ -286,6 +296,8 @@ section h1 {
 /* PRODUCT GALLERY IMAGES */
 .product-gallery {
   margin-top: 0;
+  margin-right: 32px;
+  margin-left: 32px;
   display: flex;
   gap: 32px;
   overflow-x: auto;
@@ -350,4 +362,5 @@ section h1 {
   width: 520px;
   height: 300px;
   flex-shrink: 0;
+  border: none;
 }

@@ -298,3 +298,40 @@ footer {
   border-width: 4px;
   flex-shrink: 0;
 }
+
+.ProductList {
+  margin-top: 32px;
+  padding: 0;
+}
+
+.ProductList li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ProductRocket {
+  height: 82px;
+  width: 82px;
+  border-radius: 41px;
+  background-color: #612999;
+}
+
+.Rocket {
+  margin-top: 20px;
+  margin-left: 26px;
+  width: 29px;
+  height: auto;
+}
+
+.ProductList li p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.ProductList li p:hover {
+  color: #666666;
+  cursor: pointer;
+}

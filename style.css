@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
   padding-top: 128px;
+  overflow-x: hidden;
 }
 
 header {
@@ -212,11 +213,11 @@ section h1 {
   width: 31px;
 }
 
-
 footer {
   margin: 0px;
   padding: 32px;
   height: 223px;
+  width: 100%;
   align-items: flex-start;
   background-color: #EFECFF;
 }
@@ -277,4 +278,23 @@ footer {
   font-weight: 600;
   color: #333333;
   margin: 0;
+}
+
+
+
+.Pictures {
+  margin-top: 0;
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.Picture {
+  height: 300px;
+  width: auto;
+  border: #E6DBFE;
+  border-style: solid;
+  border-width: 4px;
+  flex-shrink: 0;
 }

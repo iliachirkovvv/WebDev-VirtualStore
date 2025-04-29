@@ -17,6 +17,10 @@ header {
   background-color: #ffffff;
 }
 
+section {
+  margin: 32px;
+}
+
 #LogoContainer {
   display: flex;
   align-items: center;
@@ -132,7 +136,7 @@ footer {
   margin: 0;
 }
 
-.Banner {
+.BannerBG {
   width: 100%;
   height: 720px;
   background-size: cover;
@@ -141,19 +145,40 @@ footer {
 }
 
 .BannerText {
+  padding-top: 32px;
   width: 448px;
   position: absolute;
   z-index: 2;
   font-size: 96px;
   font-weight: 800;
-  padding: 32px;
   color: #612999;
 }
 
 .BannerSmallText {
   position: absolute;
-  z-index: 2;
   font-size: 24px;
   font-weight: 600;
   color: #000000;
+}
+
+.AboutSection {
+  margin: 32px;
+  font-family: "Rubik", sans-serif;
+}
+
+section h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #612999;
+
+}
+
+.AboutSection .AboutText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 141%;
+
 }
